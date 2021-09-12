@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a>
+          <img src="placehold.it/202x59" alt="Логотип Cat Energy">
+        </a>
+        <ul>
+          <li>
+            <a>Главная</a>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li>
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Подбор программы</h1>
+      <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <section>
+        <form action="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Данные кота</legend>
+            <ul>
+              <li>
+                <label for="name">Имя:*</label>
+                <input id="name" type="text" placeholder="Барсик">
+              </li>
+              <li>
+                <label for="weight">Вес (кг):*</label>
+                <input id="weight" type="text" placeholder="7">
+              </li>
+              <li>
+                <label for="age">Возраст (лет):</label>
+                <input id="age" type="text" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Цель</legend>
+            <ul>
+              <li>
+                <label for="slimming">Похудение</label>
+                <input id="slimming" type="radio" checked>
+              </li>
+              <li>
+                <label for="weight-gain">Набор массы</label>
+                <input id="weight-gain" type="radio">
+              </li>
+              <li>
+                <label for="need-advice">Не знаю (Нужен ваш совет)</label>
+                <input id="need-advice" type="radio">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Контактные данные (владельца кота)</legend>
+            <ul>
+              <li>
+                <label for="email">E-mail:*</label>
+                <input id="email" type="email" placeholder="кuklachev@gmail.com">
+              </li>
+              <li>
+                <label for="phone">Телефон:*</label>
+                <input id="phone" type="tel" placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Комментарий</legend>
+            <textarea name="" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Дополнительно</legend>
+            <ul>
+              <li>
+                <label for="sweetener">Cахарозаменитель</label>
+                <input id="sweetener" type="checkbox" checked>
+              </li>
+              <li>
+                <label for="water">Питьевая вода</label>
+                <input id="water" type="checkbox">
+              </li>
+              <li>
+                <label for="milk">Молоко</label>
+                <input id="milk" type="checkbox">
+              </li>
+              <li>
+                <label for="vitamins">Витамины</label>
+                <input id="vitamins" type="checkbox">
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Отправить заявку</button>
+          <span>* — Обязательные поля</span>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <div>
+          <b>Приглашаем к сотрудничеству дилеров!</b>
+          <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <img src="placehold.it/320x362" alt="Карта">
+        </div>
+      </section>
+      <section>
+        <a>
+          <img src="placehold.it/202x59" alt="Логотип Cat Energy">
+        </a>
+        <ul>
+          <li>
+            <a href="#">Мы в VK</a>
+          </li>
+          <li>
+            <a href="#">Мы в Instagram</a>
+          </li>
+          <li>
+            <a href="#">Мы в Facebook</a>
+          </li>
+        </ul>
+        <a href="#">HTML Academy</a>
+      </section>
+    </footer>
+  </body>
+</html>
