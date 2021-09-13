@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
-
-<body>
-  <header>
-    <nav>
-      <a>
-        <img src="place-hold.it/202x59" alt="Логотип Cat Energy">
-      </a>
-      <ul>
-        <li>
-          <a>Главная</a>
+<body class="page__body">
+  <header class="header">
+    <a class="header__logo">
+      <img class="header__logo-image" src="https://place-hold.it/202x59" width="202" height="59" alt="Логотип Cat Energy">
+    </a>
+    <nav class="nav header__nav">
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Главная</a>
         </li>
-        <li>
-          <a href="catalog.html">Каталог продукции</a>
+        <li class="nav__item">
+          <a class="nav__link nav__link--active">Каталог продукции</a>
         </li>
-        <li>
-          <a href="form.html">Подбор программы</a>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Каталог продукции</h1>
-    <section>
-      <ul>
-        <li>
+  <main class="main">
+    <h1 class="main_tittle">Каталог продукции</h1>
+    <section class="cards">
+      <ul class="cards__list">
+        <li class="cards_item">
           <article>
-            <img src="https://place-hold.it/161x172" alt="">
-            <h3>Cat Energy PRO<span>500 г</span></h3>
-            <dl>
+            <img class="cards__image" src="https://place-hold.it/68x86" width="68" height="86" alt="Cat Energy PRO Курица">
+            <h3 class="cards__title">Cat Energy PRO <span>500 г</span></h3>
+            <dl class="cards__spec">
               <dt>Масса</dt>
               <dd>500 г</dd>
               <dt>Вкус</dt>
@@ -41,14 +42,14 @@
               <dt>Цена</dt>
               <dd>700 Р.</dd>
             </dl>
-            <button>Заказать</button>
+            <button class="cards__button button" type="button">Заказать</button>
           </article>
         </li>
-        <li>
+        <li class="cards_item">
           <article>
-            <img src="https://place-hold.it/161x172" alt="">
-            <h3>Cat Energy PRO<span>1000 г</span></h3>
-            <dl>
+            <img class="cards__image" src="https://place-hold.it/68x86" width="68" height="86" alt="Cat Energy PRO Курица">
+            <h3 class="cards__title">Cat Energy PRO <span>1000 г</span></h3>
+            <dl class="cards__spec">
               <dt>Масса</dt>
               <dd>1000 г</dd>
               <dt>Вкус</dt>
@@ -56,14 +57,14 @@
               <dt>Цена</dt>
               <dd>1000 Р.</dd>
             </dl>
-            <button>Заказать</button>
+            <button class="cards__button button" type="button">Заказать</button>
           </article>
         </li>
-        <li>
+        <li class="cards_item">
           <article>
-            <img src="https://place-hold.it/161x172" alt="">
-            <h3>Cat Energy PRO<span>500 г</span></h3>
-            <dl>
+            <img class="cards__image" src="https://place-hold.it/68x86" width="68" height="86" alt="Cat Energy PRO Рыба">
+            <h3 class="cards__title">Cat Energy PRO <span>500 г</span></h3>
+            <dl class="cards__spec">
               <dt>Масса</dt>
               <dd>500 г</dd>
               <dt>Вкус</dt>
@@ -71,14 +72,14 @@
               <dt>Цена</dt>
               <dd>700 Р.</dd>
             </dl>
-            <button>Заказать</button>
+            <button class="cards__button button" type="button">Заказать</button>
           </article>
         </li>
-        <li>
+        <li class="cards_item">
           <article>
-            <img src="https://place-hold.it/161x172" alt="">
-            <h3>Cat Energy PRO<span>1000 г</span></h3>
-            <dl>
+            <img class="cards__image" src="https://place-hold.it/68x86" width="68" height="86" alt="Cat Energy PRO Рыба">
+            <h3 class="cards__title">Cat Energy PRO <span>1000 г</span></h3>
+            <dl class="cards__spec">
               <dt>Масса</dt>
               <dd></dd>
               <dt>Вкус</dt>
@@ -86,14 +87,14 @@
               <dt>Цена</dt>
               <dd></dd>
             </dl>
-            <button>Заказать</button>
+            <button class="cards__button button" type="button">Заказать</button>
           </article>
         </li>
-        <li>
+        <li class="cards_item">
           <article>
-            <img src="https://place-hold.it/161x172" alt="">
-            <h3>Cat Energy SLIM<span>500 г</span></h3>
-            <dl>
+            <img class="cards__image" src="https://place-hold.it/68x86" width="68" height="86" alt="Cat Energy PRO Гречка">
+            <h3 class="cards__title">Cat Energy SLIM <span>500 г</span></h3>
+            <dl class="cards__spec">
               <dt>Масса</dt>
               <dd>500 г</dd>
               <dt>Вкус</dt>
@@ -101,14 +102,14 @@
               <dt>Цена</dt>
               <dd>400 Р.</dd>
             </dl>
-            <button>Заказать</button>
+            <button class="cards__button button" type="button">Заказать</button>
           </article>
         </li>
-        <li>
+        <li class="cards_item">
           <article>
-            <img src="https://place-hold.it/161x172" alt="">
-            <h3>Cat Energy SLIM<span>1000 г</span></h3>
-            <dl>
+            <img class="cards__image" src="https://place-hold.it/68x86" width="68" height="86" alt="Cat Energy PRO Гречка">
+            <h3 class="cards__title">Cat Energy SLIM <span>1000 г</span></h3>
+            <dl class="cards__spec">
               <dt>Масса</dt>
               <dd>1000 г</dd>
               <dt>Вкус</dt>
@@ -116,14 +117,14 @@
               <dt>Цена</dt>
               <dd>700 Р.</dd>
             </dl>
-            <button>Заказать</button>
+            <button class="cards__button button" type="button">Заказать</button>
           </article>
         </li>
-        <li>
+        <li class="cards_item">
           <article>
-            <img src="https://place-hold.it/161x172" alt="">
-            <h3>Cat Energy SLIM<span>500 г</span></h3>
-            <dl>
+            <img class="cards__image" src="https://place-hold.it/68x86" width="68" height="86" alt="Cat Energy PRO Рис">
+            <h3 class="cards__title">Cat Energy SLIM <span>500 г</span></h3>
+            <dl class="cards__spec">
               <dt>Масса</dt>
               <dd>500 г</dd>
               <dt>Вкус</dt>
@@ -131,87 +132,86 @@
               <dt>Цена</dt>
               <dd>500 Р.</dd>
             </dl>
-            <button>Заказать</button>
+            <button class="cards__button button" type="button">Заказать</button>
           </article>
         </li>
-        <li>
+        <li class="cards_item">
           <article>
-            <img src="https://place-hold.it/161x172" alt="">
-            <h3>Показать еще 100500 товаров</h3>
+            <h3 class="cards__title">Показать еще 100500 товаров</h3>
             <p>На самом деле вкусов гораздо больше!</p>
-            <a href="#">Показать Все</a>
+            <a class="cards__button cards__button--show-all button" href="#">Показать Все</a>
           </article>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Дополнительные товары</h2>
-      <ul>
-        <li>
+    <section class="additional-goods">
+      <h2 class="additional-goods__title">Дополнительные товары</h2>
+      <ul class="additional-goods__list">
+        <!-- Нейминг внутри элементов списка добавлю при стилизации -->
+        <li class="additional-goods__item">
           <article>
             <h3>Сахарозаменитель</h3>
             <p>1 упаковка (100 г)</p>
             <p>200 Р.</p>
-            <button>Заказать</button>
+            <button type="button">Заказать</button>
           </article>
         </li>
-        <li>
+        <li class="additional-goods__item">
           <article>
             <h3>Питьевая вода</h3>
             <p>5 литров</p>
             <p>50 Р.</p>
-            <button>Заказать</button>
+            <button type="button">Заказать</button>
           </article>
         </li>
-        <li>
+        <li class="additional-goods__item">
           <article>
             <h3>Молоко</h3>
             <p>1 литр</p>
             <p>100 Р.</p>
-            <button>Заказать</button>
+            <button type="button">Заказать</button>
           </article>
         </li>
-        <li>
+        <li class="additional-goods__item">
           <article>
             <h3>Витамины</h3>
             <p>1 упаковка (30 г)</p>
             <p>300 Р.</p>
-            <button>Заказать</button>
+            <button type="button">Заказать</button>
           </article>
         </li>
       </ul>
-      <div>
+      <div class="promotion">
         <div></div>
-        <p>Закажите все и получите чехол для кота в подарок!</p>
+        <p class="promotion__desc">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
   </main>
-  <footer>
-    <section>
-      <div>
-        <b>Приглашаем к сотрудничеству дилеров!</b>
-        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img src="place-hold.it/320x362" alt="Карта">
+  <footer class="footer">
+    <section class="footer__location location">
+      <div class="location__adress">
+        <b class="location__title">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="location__desc">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="location__map" src="https://place-hold.it/320x362" width="230" height="362" alt="Карта">
       </div>
     </section>
-    <section>
-      <a>
-        <img src="place-hold.it/202x59" alt="Логотип Cat Energy">
+    <section class="footer__section">
+      <a class="footer__logo">
+        <img src="https://place-hold.it/200x59" width="200" height="59" alt="Логотип Cat Energy">
       </a>
-      <ul>
-        <li>
-          <a href="#">Мы в VK</a>
+      <ul class="footer__social social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">Мы в VK</a>
         </li>
-        <li>
-          <a href="#">Мы в Instagram</a>
+        <li class="social__item">
+          <a class="social__link" href="#">Мы в Instagram</a>
         </li>
-        <li>
-          <a href="#">Мы в Facebook</a>
+        <li class="social__item">
+          <a class="social__link" href="#">Мы в Facebook</a>
         </li>
       </ul>
-      <a href="#">HTML Academy</a>
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </section>
   </footer>
 </body>
-
 </html>
