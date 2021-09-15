@@ -1,0 +1,42 @@
+.form {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 20px;
+}
+
+.form__fieldset {
+  width: 100%;
+  grid-column: 1/-1;
+
+  @media (min-width: $desktop-width) {
+    &--about-cat {
+      grid-column: 1/-2;
+    }
+    &--goal {
+      grid-column: 2/-1;
+    }
+  }
+}
+
+.form__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form__label {
+  text-transform: uppercase;
+}
+
+.from__button {
+  display: block;
+  padding: 11px 0;
+  margin: 0 auto;
+  width: 280px;
+  grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-2;
+  }
+}

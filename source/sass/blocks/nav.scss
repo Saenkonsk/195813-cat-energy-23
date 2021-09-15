@@ -1,0 +1,122 @@
+.nav__toggle {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-color: $basic_white;
+  cursor: pointer;
+  border: none;
+
+  // &:hover,
+  // &:active {
+  //   background-color: yellow;
+  // }
+}
+
+.nav__toggle--closed {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic_black;
+    box-shadow: 0 8px 0 0 $basic_black, 0 16px 0 0 $basic_black;
+  }
+
+  &::after {
+    background-color: fade(#ffffff, 30%);
+    box-shadow:
+      0 8px 0 0 fade(#ffffff, 30%),
+      0 16px 0 0 fade(#ffffff, 30%);
+  }
+}
+
+.nav__toggle--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic_black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  // &:active::before,
+  // &:active::after {
+  //   background-color: fade(#ffffff, 30%);
+  // }
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 440px;
+    justify-content: space-between;
+    margin-top: 42px;
+  }
+}
+
+.nav__item {
+  border-top: 2px solid $basic_light-grey;
+
+  // &:last-child {
+  //   border-bottom: 2px solid #E6E6E6;
+  // }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    // &:last-child {
+    //   border: none;
+    // }
+  }
+}
+
+.nav__link {
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-black;
+  position: relative;
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $basic_white;
+  }
+}

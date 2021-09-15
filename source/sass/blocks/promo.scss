@@ -1,0 +1,59 @@
+.promo {
+  font-weight: 400;
+  color: $basic_white;
+
+  @media (min-width: $tablet-width) {
+    color: $basic_black;
+  }
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: red;
+  margin: 0 auto;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.promo__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: red;
+  margin: 0 auto;
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.promo__button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 280px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 0;
+  }
+}
